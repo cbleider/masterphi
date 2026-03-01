@@ -1,12 +1,4 @@
-¡Tienes un ojo de águila! Ya sé exactamente qué está pasando.
 
-El problema en el celular ocurre porque las casillas de WhatsApp y el Mensaje (que son más largas en la computadora) tienen una regla que dice que deben ocupar "2 columnas" (grid-column: span 2;). En el celular, como la pantalla es pequeña, el formulario pasa a tener "1 sola columna", pero esas casillas siguen intentando ocupar 2, lo que rompe el diseño y hace que se salgan de la pantalla.
-
-He ajustado el código CSS en la parte de celulares (@media) para decirle a esas casillas que, cuando estén en celular, ocupen solo 1 columna y reduzcan un poquito los márgenes para que se vean perfectas.
-
-Aquí tienes el código definitivo con el formulario 100% responsivo para celulares. Todo lo demás (blogs, fotos, WhatsApp) está intacto:
-
-HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
