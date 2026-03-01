@@ -1,0 +1,718 @@
+¡No te preocupes! Mezclar código a veces es complicado porque un simple cambio de nombre en un id (como pasar de modal-mate a modal-blog-mate) hace que deje de funcionar.
+
+He tomado la versión más reciente y perfecta que teníamos (la que tiene a Marco como Máster, la foto de Bachillerato nueva, el Instagram y el WhatsApp automatizado) y le incrusté con precisión láser todos los textos completos y originales de tus 3 blogs.
+
+Aquí tienes el código 100% definitivo, completo y listo para que lo subas a GitHub. Solo cópialo y pégalo en tu archivo index.html:
+
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Phi | Tutorías Profesionales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --phi-gold: #c5a059;
+            --phi-dark: #0f172a;
+            --phi-cream: #fdfbf7;
+            --white: #ffffff;
+            --text-main: #334155;
+        }
+
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            background-color: var(--phi-cream); 
+            color: var(--text-main); 
+            line-height: 1.7;
+            background-image: url("data:image/svg+xml,%3Csvg width='1000' height='1000' viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231a365d' fill-opacity='0.06' font-family='serif' font-weight='bold'%3E%3C!-- MATEMÁTICAS --%3E%3Ctext x='50' y='80' font-size='40'%3E%26%23934;%3C/text%3E%3Ctext x='450' y='120' font-size='35'%3E%26%23960;%3C/text%3E%3Ctext x='850' y='80' font-size='38'%3E%26%23931;%3C/text%3E%3Ctext x='250' y='250' font-size='30'%3E%26%238730;%3C/text%3E%3Ctext x='700' y='280' font-size='32'%3E%26%238734;%3C/text%3E%3Ctext x='100' y='420' font-size='30'%3E%26%23916;%3C/text%3E%3Ctext x='550' y='450' font-size='35'%3E%26%238747;%3C/text%3E%3Ctext x='920' y='380' font-size='30'%3E%26%238800;%3C/text%3E%3Ctext x='400' y='650' font-size='30'%3E%26%23937;%3C/text%3E%3Ctext x='750' y='580' font-size='35'%3E%26%238721;%3C/text%3E%3Ctext x='220' y='400' font-size='25'%3E%26%23402;(x)%3C/text%3E%3Ctext x='10' y='500' font-size='30'%3E%26%238804;%3C/text%3E%3C!-- CIENCIA --%3E%3Ctext x='200' y='100' font-size='35'%3E%26%239883;%3C/text%3E%3Ctext x='650' y='150' font-size='32'%3E%26%23129516;%3C/text%3E%3Ctext x='50' y='300' font-size='35'%3E%26%23128300;%3C/text%3E%3Ctext x='350' y='320' font-size='30'%3E%26%23128301;%3C/text%3E%3Ctext x='850' y='480' font-size='35'%3E%26%23129515;%3C/text%3E%3Ctext x='700' y='900' font-size='35'%3E%26%23129504;%3C/text%3E%3C!-- HUMANIDADES Y ARTES --%3E%3Ctext x='150' y='550' font-size='32'%3E%26%23128214;%3C/text%3E%3Ctext x='600' y='600' font-size='30'%3E%26%239997;%3C/text%3E%3Ctext x='850' y='750' font-size='38'%3E%26%23127963;%3C/text%3E%3Ctext x='50' y='700' font-size='30'%3E%26%23128220;%3C/text%3E%3Ctext x='300' y='800' font-size='32'%3E%26%23127925;%3C/text%3E%3Ctext x='500' y='920' font-size='35'%3E%26%23127912;%3C/text%3E%3Ctext x='100' y='950' font-size='32'%3E%26%23129521;%3C/text%3E%3Ctext x='450' y='780' font-size='30'%3E%26%23128269;%3C/text%3E%3Ctext x='920' y='650' font-size='28'%3EABC%3C/text%3E%3Ctext x='800' y='200' font-size='28'%3E%26%23952;%3C/text%3E%3Ctext x='500' y='20' font-size='25'%3E%26%23955;%3C/text%3E%3Ctext x='650' y='380' font-size='28'%3E%26%238776;%3C/text%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-attachment: scroll; 
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* HEADER */
+        header { 
+            background: rgba(255, 255, 255, 0.95); padding: 1rem 5%; 
+            display: flex; justify-content: space-between; align-items: center; 
+            position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.05); backdrop-filter: blur(10px);
+        }
+        .header-left { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .phi-symbol { font-size: 2.2rem; color: var(--phi-gold); font-weight: bold; line-height: 1; }
+        .logo-text { font-size: 1.8rem; font-weight: 700; color: var(--phi-dark); }
+        .logo-text span { color: var(--phi-gold); }
+        nav a { text-decoration: none; color: var(--phi-dark); margin-left: 20px; font-weight: 600; font-size: 0.95rem; transition: 0.3s; }
+        nav a:hover { color: var(--phi-gold); }
+
+        /* HERO */
+        .hero { 
+            padding: 140px 5% 100px; text-align: center; 
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center; color: var(--white); 
+        }
+        .hero h1 { font-size: 3.8rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 35px; font-weight: 300; opacity: 0.9; }
+
+        .btn-gold { 
+            background: var(--phi-gold); color: var(--white); padding: 18px 45px; border-radius: 4px; 
+            text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; border: none; cursor: pointer; font-size: 1.1rem;
+        }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(197,160,89,0.3); background: #b08d4a; }
+
+        section { padding: 80px 8%; }
+        h2 { text-align: center; font-size: 2.8rem; margin-bottom: 50px; color: var(--phi-dark); }
+
+        /* CARDS */
+        .card-materia, .blog-card, .faq-item, .form-box {
+            background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(5px);
+            border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+        }
+
+        .grid-materias { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; }
+        .card-materia { padding: 40px 20px; text-align: center; border-bottom: 4px solid transparent; cursor: pointer; }
+        .card-materia:hover { transform: translateY(-5px); border-bottom: 4px solid var(--phi-gold); background: white; }
+        .card-materia i { font-size: 2.5rem; color: var(--phi-gold); margin-bottom: 15px; }
+
+        /* ESTILOS NUEVOS PARA PROFESORES CHALLENGER */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .teacher-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-wrapper {
+            width: 100%;
+            height: 320px;
+            background-color: #001f3f;
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            image-rendering: auto;
+        }
+
+        .card-content {
+            padding: 30px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin: 0 auto 15px auto;
+            background-color: #f3eacb;
+            color: #b8860b;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px 0;
+            color: #001f3f;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn-schedule {
+            display: inline-block;
+            background-color: #001f3f;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn-schedule:hover {
+            background-color: #b8860b;
+        }
+
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .blog-card { cursor: pointer; }
+        .blog-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-bottom: 4px solid var(--phi-gold); }
+        .blog-img { height: 200px; background-size: cover; background-position: center; }
+        .blog-content { padding: 25px; }
+
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { margin-bottom: 15px; padding: 25px; border-left: 4px solid var(--phi-gold); }
+
+        /* FORMULARIOS (CORREGIDOS PARA CELULAR) */
+        .form-box { padding: 50px; max-width: 850px; margin: 0 auto; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .full-width { grid-column: span 2; }
+        
+        input, select, textarea { 
+            width: 100%; padding: 15px; border: 1px solid #e2e8f0; 
+            border-radius: 4px; 
+            font-size: 16px; 
+            font-family: 'Inter', sans-serif;
+            background: white; color: var(--text-main);
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus { border-color: var(--phi-gold); outline: none; box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.1); }
+
+        /* ESTILOS DE LOS MODALES */
+        .modal {
+            display: none; position: fixed; z-index: 3000; left: 0; top: 0; 
+            width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.9); 
+            backdrop-filter: blur(8px); overflow-y: auto;
+        }
+        .modal-content {
+            background-color: var(--white); margin: 5% auto; padding: 50px; 
+            border-radius: 12px; width: 90%; max-width: 850px; position: relative; 
+            border-left: 6px solid var(--phi-gold); box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+        }
+        .close-modal { position: absolute; right: 25px; top: 20px; font-size: 2.5rem; cursor: pointer; color: var(--phi-dark); transition: 0.3s; }
+        .close-modal:hover { color: var(--phi-gold); }
+        
+        .modal-body h2 { text-align: left; font-size: 2.5rem; margin-top: 0; margin-bottom: 20px; color: var(--phi-dark); }
+        .modal-body p { font-size: 1.15rem; color: var(--text-main); line-height: 1.8; margin-bottom: 20px; }
+        .modal-body ul { font-size: 1.15rem; color: var(--text-main); margin-bottom: 25px; line-height: 1.8; }
+        
+        .modal-cta { background: var(--phi-dark); color: white; padding: 40px; border-radius: 8px; text-align: center; margin-top: 40px; border-top: 4px solid var(--phi-gold); }
+        .modal-cta h3 { color: white; margin-top: 0; font-size: 1.8rem; }
+
+        footer { background: var(--phi-dark); color: white; padding: 60px 5% 40px; text-align: center; position: relative; z-index: 1; }
+        .social-links a { color: var(--white); font-size: 1.8rem; margin: 0 15px; transition: 0.3s; }
+        .social-links a:hover { color: var(--phi-gold); }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; z-index: 2000; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .form-grid { grid-template-columns: 1fr; }
+            nav { display: none; }
+            .modal-content { padding: 30px; }
+            .modal-body h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="header-left">
+        <div class="phi-symbol">&Phi;</div>
+        <div class="logo-text">Master <span>Phi</span></div>
+    </a>
+    <nav>
+        <a href="#materias">Materias</a>
+        <a href="#blog">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="#mentores">Mentores</a>
+        <a href="#unirse-profe" style="color: var(--phi-gold)">Ser Tutor</a>
+        <a href="#contacto" class="btn-gold" style="padding: 10px 20px; font-size: 0.9rem; margin-left: 15px;">Reservar</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Excelencia académica con expertos que inspiran.</h1>
+    <p>Tutorías personalizadas de Matemáticas, Inglés y Bachillerato. Sin ataduras, tú eliges el horario.</p>
+    <a href="#contacto" class="btn-gold">Quiero reservar una clase</a>
+</section>
+
+<section id="materias">
+    <h2>Nuestras Especialidades</h2>
+    <div class="grid-materias">
+        <div class="card-materia" onclick="abrirModal('modal-materia-mate')"><i class="fas fa-square-root-alt"></i><h3>Matemáticas</h3></div>
+        <div class="card-materia" onclick="abrirModal('modal-materia-ingles')"><i class="fas fa-language"></i><h3>Inglés</h3></div>
+        <div class="card-materia" onclick="abrirModal('modal-materia-espanol')"><i class="fas fa-pen-fancy"></i><h3>Español</h3></div>
+        <div class="card-materia" onclick="abrirModal('modal-materia-sociales')"><i class="fas fa-atlas"></i><h3>Sociales</h3></div>
+        <div class="card-materia" onclick="abrirModal('modal-materia-bachi')"><i class="fas fa-user-graduate"></i><h3>Bachillerato</h3></div>
+    </div>
+</section>
+
+<section id="blog">
+    <h2>Blog de Éxito Académico</h2>
+    <div class="blog-grid">
+        <div class="blog-card" onclick="abrirModal('modal-blog-mate')">
+            <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="blog-content">
+                <h3>Vence el miedo a las Matemáticas</h3>
+                <p>Consejos prácticos para entender los números de una vez por todas. <strong>Leer más...</strong></p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="abrirModal('modal-blog-bachi')">
+            <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="blog-content">
+                <h3>Guía de Bachillerato 2026</h3>
+                <p>Todo lo que necesitas saber para organizar tu estudio por madurez. <strong>Leer más...</strong></p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="abrirModal('modal-blog-ingles')">
+            <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="blog-content">
+                <h3>Inglés para el mundo real</h3>
+                <p>Cómo pasar de la teoría aburrida a mantener una conversación natural. <strong>Leer más...</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h4>¿Cómo se realizan las clases?</h4>
+            <p>Todas nuestras sesiones son virtuales a través de Google Meet con pizarra digital interactiva.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Cuál es la forma de pago?</h4>
+            <p>Aceptamos pago móvil (SINPE/Transferencia/Paypall) tras coordinar el horario por WhatsApp.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" style="background: rgba(226, 232, 240, 0.6); backdrop-filter: blur(5px);">
+    <h2>Reserva tus horas de clase</h2>
+    <div class="form-box">
+        <form id="reservaForm">
+            <div class="form-grid">
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="whatsapp" class="full-width" placeholder="WhatsApp (Celular)" required>
+                <select name="materia" id="select-materia" required>
+                    <option value="">¿Qué materia necesitas?</option>
+                    <option value="Matemáticas">Matemáticas</option>
+                    <option value="Inglés">Inglés</option>
+                    <option value="Español">Español</option>
+                    <option value="Estudios Sociales">Estudios Sociales</option>
+                    <option value="Bachillerato Madurez">Bachillerato Madurez</option>
+                </select>
+                <select name="sesiones" required>
+                    <option value="">¿Cuántas horas quieres reservar?</option>
+                    <option value="1">1 hora individual</option>
+                    <option value="2">2 horas</option>
+                    <option value="5">5+ horas (Intensivo)</option>
+                </select>
+                <textarea name="mensaje" class="full-width" placeholder="Cuéntanos en qué temas necesitas ayuda..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-gold" style="width: 100%; margin-top: 20px;">Enviar Solicitud de Reserva</button>
+        </form>
+    </div>
+</section>
+
+<section id="mentores">
+    <h2>Tu Equipo de Mentores</h2>
+    <div class="team-grid">
+        <div class="teacher-card" onclick="abrirModal('modal-profe-jorge')">
+            <div class="image-wrapper">
+                <img src="https://i.ibb.co/Z6TqCYZ9/Jorge-Castro.png" alt="Lic. Jorge Castro">
+            </div>
+            <div class="card-content">
+                <div>
+                    <span class="category-badge">Matemáticas</span>
+                    <h3>Lic. Jorge Castro V.</h3>
+                    <p>Licenciado en Matemática. Especialista en Precálculo, Cálculo, Álgebra y Bachillerato. Lic en enseñanza de l y ll ciclo.</p>
+                </div>
+                <a href="javascript:void(0)" onclick="event.stopPropagation(); irAFormulario('Matemáticas')" class="btn-schedule">Agendar con Jorge</a>
+            </div>
+        </div>
+
+        <div class="teacher-card" onclick="abrirModal('modal-profe-joseiro')">
+            <div class="image-wrapper">
+                <img src="https://i.ibb.co/jZQYHxMy/Joseth-Mora.png" alt="Prof. Joseth Mora">
+            </div>
+            <div class="card-content">
+                <div>
+                    <span class="category-badge">Idiomas</span>
+                    <h3>Prof. Joseth Mora</h3>
+                    <p>Inglés personalizado con enfoque en comunicación fluida y gramática conversacional.</p>
+                </div>
+                <a href="javascript:void(0)" onclick="event.stopPropagation(); irAFormulario('Inglés')" class="btn-schedule">Agendar con Joseth</a>
+            </div>
+        </div>
+
+        <div class="teacher-card" onclick="abrirModal('modal-profe-marco')">
+            <div class="image-wrapper">
+                <img src="https://i.ibb.co/Rp6LbRHv/Marco-Sibaja.png" alt="Msc. Marco Sibaja">
+            </div>
+            <div class="card-content">
+                <div>
+                    <span class="category-badge">Estudios Sociales</span>
+                    <h3>Msc. Marco Sibaja</h3>
+                    <p>Máster en Educación. Licenciado en Estudios Sociales y en Enseñanza de I y II Ciclo. Preparación para Bachillerato.</p>
+                </div>
+                <a href="javascript:void(0)" onclick="event.stopPropagation(); irAFormulario('Estudios Sociales')" class="btn-schedule">Agendar con Marco</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="unirse-profe" style="background: var(--phi-dark); color: white;">
+    <h2 style="color: white;">Únete como Tutor a Master Phi</h2>
+    <div class="form-box" style="color: var(--text-main);">
+        <form id="postulacionForm">
+            <div class="form-grid">
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="text" name="especialidad" class="full-width" placeholder="Tu Especialidad">
+                <textarea name="notas" class="full-width" placeholder="Cuéntanos tu experiencia..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-gold" style="width: 100%; margin-top: 20px; background: var(--phi-dark);">Enviar Postulación</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <a href="#" class="footer-logo">
+        <div class="phi-symbol" style="color: white;">&Phi;</div>
+        <div class="logo-text" style="color: white;">Master <span style="color: var(--phi-gold);">Phi</span></div>
+    </a>
+    <div class="social-links">
+        <a href="https://www.facebook.com/people/Master-Phi/100079112349086/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/masterphi_1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/50671128682" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p style="opacity: 0.6;">&copy; 2026 Master Phi Academy. San José, Costa Rica.</p>
+</footer>
+
+<a href="https://wa.me/50671128682" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<div id="modal-materia-mate" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-materia-mate')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Ciencias Exactas</span>
+            <h2>Vence el miedo a las Matemáticas: De la frustración al dominio</h2>
+            <p>Es muy común escuchar la frase "yo no sirvo para los números", pero la realidad es que el problema rara vez es la capacidad del estudiante; casi siempre es la forma en que se enseñó el concepto inicial.</p>
+            <p><strong>El error clásico:</strong> Tratar de memorizar fórmulas sin entender qué significan. Las matemáticas son un lenguaje lógico, y cuando intentas memorizar en lugar de comprender, un pequeño cambio en un ejercicio provoca un bloqueo total.</p>
+            <p><strong>¿Por qué una tutoría personalizada marca la diferencia?</strong></p>
+            <ul>
+                <li><strong>Diagnóstico preciso:</strong> En una clase grupal, el profesor avanza. En una tutoría, detectamos exactamente en qué paso o concepto base te perdiste (a veces es algo de años anteriores) y lo reparamos.</li>
+                <li><strong>Explicación a tu ritmo:</strong> Si necesitas que te expliquen un despeje tres veces con ejemplos distintos, lo hacemos. Sin presiones.</li>
+                <li><strong>Enfoque en exámenes:</strong> Te enseñamos "trucos" y lógica para resolver ejercicios de selección única más rápido, vital para pruebas como Bachillerato.</li>
+            </ul>
+            <p>No permitas que las matemáticas frenen tu desarrollo académico o profesional. Entender los números no es un talento innato, es un proceso que requiere la guía adecuada.</p>
+            <div class="modal-cta">
+                <h3>¿Listo para entender los números de una vez por todas?</h3>
+                <p>Nuestros expertos en matemáticas te llevarán paso a paso hasta que sientas total seguridad.</p>
+                <button onclick="irAFormulario('Matemáticas')" class="btn-gold">Agendar mi clase de Matemáticas</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-materia-ingles" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-materia-ingles')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Idiomas</span>
+            <h2>Inglés 100% Personalizado: Tu Meta es Nuestro Plan</h2>
+            <p>Diseñamos cada sesión según el área específica que necesites potenciar:</p>
+            <ul>
+                <li><strong>Fluidez y Pronunciación:</strong> Sesiones de <em>Speaking</em> intensivo para ganar confianza al hablar.</li>
+                <li><strong>Gramática Estructural:</strong> Entiende el porqué de las reglas para escribir y hablar con precisión.</li>
+                <li><strong>Comprensión y Exámenes:</strong> Entrenamiento auditivo y preparación para pruebas TOEIC, TOEFL o académicas.</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Comienza a hablar con propiedad</h3>
+                <button onclick="irAFormulario('Inglés')" class="btn-gold">Agendar tutoría de Inglés</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-materia-sociales" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-materia-sociales')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Humanidades</span>
+            <h2>Estudios Sociales y Cívica</h2>
+            <p>Aprender Sociales no es memorizar fechas, es entender el contexto del mundo en el que vivimos. Nuestro enfoque te prepara para:</p>
+            <ul>
+                <li><strong>Pruebas MEP y Bachillerato:</strong> Análisis de temarios oficiales, técnicas de descarte y mapas conceptuales.</li>
+                <li><strong>Geografía e Historia:</strong> Comprensión profunda de procesos históricos nacionales e internacionales.</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Asegura tu nota en Sociales</h3>
+                <button onclick="irAFormulario('Estudios Sociales')" class="btn-gold">Agendar Estudios Sociales</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-materia-espanol" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-materia-espanol')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Letras</span>
+            <h2>Español: Gramática, Redacción y Literatura</h2>
+            <p>Te ayudamos a dominar la lengua materna, esencial para cualquier carrera o prueba académica:</p>
+            <ul>
+                <li><strong>Análisis Literario:</strong> Desglose de obras, figuras literarias y movimientos.</li>
+                <li><strong>Gramática y Ortografía:</strong> Sintaxis, formación de oraciones y reglas ortográficas infalibles.</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Mejora tus habilidades en Español</h3>
+                <button onclick="irAFormulario('Español')" class="btn-gold">Agendar clase de Español</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-materia-bachi" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-materia-bachi')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Titulación</span>
+            <h2>Bachillerato por Madurez: Estrategia Pura</h2>
+            <p>Aprobar no se trata de estudiar 10 horas al día, se trata de <strong>estudiar de forma inteligente</strong>. Nosotros filtramos el ruido, te decimos qué temas son cruciales y cómo resolver los exámenes de selección única del MEP:</p>
+            <ul>
+                <li><strong>Temarios Oficiales:</strong> Cobertura 100% enfocada en los últimos lineamientos del MEP.</li>
+                <li><strong>Simulacros de Examen:</strong> Práctica constante con preguntas reales de años anteriores.</li>
+                <li><strong>Técnicas de Descarte:</strong> Aprende a identificar la respuesta correcta en selección única, ahorrando tiempo y evitando trampas.</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Obtén tu título este año</h3>
+                <button onclick="irAFormulario('Bachillerato Madurez')" class="btn-gold">Agendar Bachillerato</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-profe-jorge" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-profe-jorge')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Mentor de Exactas</span>
+            <h2>Lic. Jorge Castro V.</h2>
+            <p>Licenciado en la enseñanza de la Matemática y enseñanza de l y ll ciclo. Con vocación para llevar a los estudiantes desde los conceptos básicos hasta el nivel universitario.</p>
+            <ul>
+                <li><strong>Especialidad Universitaria:</strong> Precálculo, Cálculo (Diferencial e Integral) y Álgebra.</li>
+                <li><strong>Nivel Colegial:</strong> Preparación intensiva para pruebas MEP y nivelación escolar.</li>
+                <li><strong>Metodología:</strong> Explicaciones lógicas y prácticas, erradicando la memorización sin sentido.</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Aprende con el Profe Jorge</h3>
+                <button onclick="irAFormulario('Matemáticas')" class="btn-gold">Agendar clase con Jorge</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-profe-joseiro" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-profe-joseiro')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Mentor de Idiomas</span>
+            <h2>Prof. Joseth Mora</h2>
+            <p>Experto en la enseñanza del idioma Inglés, enfocado en romper la barrera del miedo conversacional y estructurar el idioma de forma natural.</p>
+            <ul>
+                <li><strong>Especialidad:</strong> Conversación fluida, pronunciación, gramática estructural y comprensión (listening).</li>
+                <li><strong>Enfoque:</strong> Inglés adaptado a tus metas específicas (negocios, académico, viajes, entrevistas, preparación de exámenes).</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Mejora tu nivel con el Prof. Joseth</h3>
+                <button onclick="irAFormulario('Inglés')" class="btn-gold">Agendar clase con Joseth</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-profe-marco" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-profe-marco')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Mentor de Humanidades</span>
+            <h2>Msc. Marco Sibaja</h2>
+            <p>Master en educación, con Licenciatura en Estudios Sociales y en Enseñanza de I y II Ciclo, apasionado por la historia y la geografía, y experto en simplificar temarios extensos.</p>
+            <ul>
+                <li><strong>Especialidad:</strong> Preparación intensiva para Bachillerato por Madurez, pruebas MEP y nivelación de educación general básica.</li>
+                <li><strong>Metodología:</strong> Análisis crítico, mapas conceptuales y comprensión de eventos históricos sin memorización robótica.</li>
+            </ul>
+            <div class="modal-cta">
+                <h3>Prepárate con el Profe Marco</h3>
+                <button onclick="irAFormulario('Estudios Sociales')" class="btn-gold">Agendar clase con Marco</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-blog-mate" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-blog-mate')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Ciencias Exactas</span>
+            <h2>Vence el miedo a las Matemáticas: De la frustración al dominio</h2>
+            <p>Es muy común escuchar la frase "yo no sirvo para los números", pero la realidad es que el problema rara vez es la capacidad del estudiante; casi siempre es la forma en que se enseñó el concepto inicial.</p>
+            <p><strong>El error clásico:</strong> Tratar de memorizar fórmulas sin entender qué significan. Las matemáticas son un lenguaje lógico, y cuando intentas memorizar en lugar de comprender, un pequeño cambio en un ejercicio provoca un bloqueo total.</p>
+            <p><strong>¿Por qué una tutoría personalizada marca la diferencia?</strong></p>
+            <ul>
+                <li><strong>Diagnóstico preciso:</strong> En una clase grupal, el profesor avanza. En una tutoría, detectamos exactamente en qué paso o concepto base te perdiste (a veces es algo de años anteriores) y lo reparamos.</li>
+                <li><strong>Explicación a tu ritmo:</strong> Si necesitas que te expliquen un despeje tres veces con ejemplos distintos, lo hacemos. Sin presiones.</li>
+                <li><strong>Enfoque en exámenes:</strong> Te enseñamos "trucos" y lógica para resolver ejercicios de selección única más rápido, vital para pruebas como Bachillerato.</li>
+            </ul>
+            <p>No permitas que las matemáticas frenen tu desarrollo académico o profesional. Entender los números no es un talento innato, es un proceso que requiere la guía adecuada.</p>
+            <div class="modal-cta">
+                <h3>¿Listo para entender los números de una vez por todas?</h3>
+                <p>Nuestros expertos en matemáticas te llevarán paso a paso hasta que sientas total seguridad.</p>
+                <button onclick="irAFormulario('Matemáticas')" class="btn-gold">Agendar mi clase de Matemáticas</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-blog-bachi" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-blog-bachi')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Guía Académica</span>
+            <h2>Superar el Bachillerato por Madurez: Estrategia y Enfoque</h2>
+            <p>Enfrentar los exámenes de Bachillerato por Madurez puede ser intimidante, especialmente si llevas tiempo sin estudiar o si debes equilibrar tu preparación con trabajo y familia. Sin embargo, aprobar no se trata de estudiar 10 horas al día, se trata de <strong>estudiar de forma inteligente</strong>.</p>
+            <p><strong>Los mayores desafíos que enfrentan los estudiantes:</strong></p>
+            <ul>
+                <li><strong>Sobrecarga de información:</strong> El temario del MEP es extenso. Muchos pierden semanas leyendo temas que rara vez se evalúan o valen muy pocos puntos.</li>
+                <li><strong>Falta de disciplina:</strong> Sin un horario fijo de clases, es fácil procrastinar hasta que faltan dos semanas para la prueba.</li>
+                <li><strong>Desconocimiento del formato:</strong> Conocer la teoría es solo el 50%; el otro 50% es saber cómo el MEP redacta sus preguntas trampa de selección única.</li>
+            </ul>
+            <p><strong>Cómo te ayuda un tutor de Master Phi:</strong> Nosotros filtramos el ruido. Te decimos exactamente qué temas son cruciales, cómo interpretan las preguntas y te damos material enfocado. Una hora de tutoría bien dirigida equivale a cuatro horas de estudio solitario dando vueltas en círculo.</p>
+            <div class="modal-cta">
+                <h3>Asegura tu título este año</h3>
+                <p>Deja de adivinar qué estudiar. Prepárate con profesionales que conocen las pruebas a fondo.</p>
+                <button onclick="irAFormulario('Bachillerato Madurez')" class="btn-gold">Preparación para Bachillerato</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-blog-ingles" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="cerrarModal('modal-blog-ingles')">&times;</span>
+        <div class="modal-body">
+            <span style="color:var(--phi-gold); font-weight:bold; letter-spacing:1px; text-transform:uppercase;">Idiomas</span>
+            <h2>Inglés para el mundo real: Cómo desbloquear tu fluidez</h2>
+            <p>¿Puedes leer un texto en inglés y entenderlo casi todo, pero cuando alguien te habla te quedas en blanco? No estás solo. Es el resultado directo de un sistema educativo que prioriza completar espacios en blanco sobre la comunicación real.</p>
+            <p><strong>El síndrome del traductor interno:</strong> El mayor obstáculo para la fluidez es pensar en español, traducir mentalmente al inglés, revisar la gramática y luego hablar. Para cuando terminas ese proceso, la conversación ya avanzó.</p>
+            <p><strong>El valor de la práctica personalizada 1 a 1:</strong></p>
+            <ul>
+                <li><strong>Tiempo real de habla:</strong> En un instituto tradicional de 15 personas, hablas máximo 3 minutos por hora. En una tutoría privada, hablas el 80% del tiempo.</li>
+                <li><strong>Corrección inmediata y constructiva:</strong> Un tutor corrige tu pronunciación (por ejemplo, la diferencia entre "sheet" y "shit") y te enseña expresiones idiomáticas ("phrasal verbs") que la gente usa en la calle y en las oficinas.</li>
+                <li><strong>Pérdida del miedo escénico:</strong> Al estar solo con un tutor de confianza, el miedo a equivocarte frente a tus compañeros desaparece.</li>
+            </ul>
+            <p>El inglés no se "estudia" como se estudia la historia; el inglés se "entrena" como se entrena un músculo en el gimnasio.</p>
+            <div class="modal-cta">
+                <h3>Da el salto profesional que necesitas</h3>
+                <p>Mejora tu fluidez, prepárate para entrevistas laborales y pierde el miedo a hablar.</p>
+                <button onclick="irAFormulario('Inglés')" class="btn-gold">Agendar tutoría de Inglés</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // FUNCIONES PARA ABRIR Y CERRAR MODALES
+    function abrirModal(id) {
+        document.getElementById(id).style.display = "block";
+        document.body.style.overflow = "hidden"; // Detiene el scroll de fondo
+    }
+    
+    function cerrarModal(id) {
+        document.getElementById(id).style.display = "none";
+        document.body.style.overflow = "auto"; // Restaura el scroll
+    }
+    
+    // Función ESTRELLA: Cierra modales, auto-selecciona materia y baja al form
+    function irAFormulario(materiaSeleccionada) {
+        // Cerrar cualquier modal abierto
+        document.querySelectorAll('.modal').forEach(m => m.style.display = "none");
+        document.body.style.overflow = "auto";
+        
+        // Autocompletar la materia
+        const select = document.getElementById('select-materia');
+        if(select) { select.value = materiaSeleccionada; }
+        
+        // Viajar al contacto
+        window.location.href = '#contacto';
+    }
+
+    // Cierre al dar clic fuera
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
+
+    // LÓGICA DE ENVÍO PARA GOOGLE SHEETS
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysRoX5dw-nz3A6VxXcA0I3hyQNHSfcCYLBqu7m5YfQtvz2SRhxhDwyJQ8fIZSd1ZQF/exec';
+
+    const manejarEnvio = (id, tipo) => {
+        const form = document.getElementById(id);
+        if(!form) return;
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const textoOriginal = btn.innerText;
+            btn.innerText = "Enviando..."; 
+            btn.disabled = true;
+
+            const data = Object.fromEntries(new FormData(form).entries());
+            data.tipo = tipo;
+
+            fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(data) })
+            .then(() => {
+                if(tipo === 'reserva') {
+                    alert("¡Gracias por contactar a Master Phi, " + data.nombre + "! \n\nHaz clic en 'Aceptar' para abrir WhatsApp. Por ahí te compartiremos el calendario de horarios para tu clase.");
+                    const telefono = "50671128682"; // NÚMERO DE WHATSAPP DEFINITIVO
+                    const mensajeWA = "¡Hola Master Phi! Soy " + data.nombre + ". Acabo de enviar mis datos en la página web para una tutoría de " + data.materia + ". Me gustaría ver el calendario de horarios disponibles, por favor.";
+                    window.location.href = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensajeWA);
+                } else {
+                    alert("¡Gracias por postularte, " + data.nombre + "! Hemos recibido tu perfil y lo revisaremos muy pronto.");
+                }
+                form.reset();
+            })
+            .catch(() => alert("Error al enviar. Inténtalo directamente haciendo clic en el botón de WhatsApp flotante."))
+            .finally(() => { btn.innerText = textoOriginal; btn.disabled = false; });
+        });
+    }
+    
+    manejarEnvio('reservaForm', 'reserva');
+    manejarEnvio('postulacionForm', 'postulacion');
+</script>
+
+</body>
+</html>
