@@ -1,4 +1,12 @@
+¡Tienes un ojo de águila! Ya sé exactamente qué está pasando.
 
+El problema en el celular ocurre porque las casillas de WhatsApp y el Mensaje (que son más largas en la computadora) tienen una regla que dice que deben ocupar "2 columnas" (grid-column: span 2;). En el celular, como la pantalla es pequeña, el formulario pasa a tener "1 sola columna", pero esas casillas siguen intentando ocupar 2, lo que rompe el diseño y hace que se salgan de la pantalla.
+
+He ajustado el código CSS en la parte de celulares (@media) para decirle a esas casillas que, cuando estén en celular, ocupen solo 1 columna y reduzcan un poquito los márgenes para que se vean perfectas.
+
+Aquí tienes el código definitivo con el formulario 100% responsivo para celulares. Todo lo demás (blogs, fotos, WhatsApp) está intacto:
+
+HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -174,7 +182,7 @@
         .faq-container { max-width: 800px; margin: 0 auto; }
         .faq-item { margin-bottom: 15px; padding: 25px; border-left: 4px solid var(--phi-gold); }
 
-        /* FORMULARIOS (CORREGIDOS PARA CELULAR) */
+        /* FORMULARIOS */
         .form-box { padding: 50px; max-width: 850px; margin: 0 auto; }
         .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .full-width { grid-column: span 2; }
@@ -215,9 +223,19 @@
         .social-links a:hover { color: var(--phi-gold); }
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; z-index: 2000; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
 
+        /* ======== ARREGLO PARA CELULARES ======== */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
+            
+            /* El formulario pasa a 1 sola columna */
             .form-grid { grid-template-columns: 1fr; }
+            
+            /* Evita que los inputs largos rompan la pantalla */
+            .full-width { grid-column: span 1; } 
+            
+            /* Márgenes más amigables en móviles */
+            .form-box { padding: 25px 15px; } 
+
             nav { display: none; }
             .modal-content { padding: 30px; }
             .modal-body h2 { font-size: 2rem; }
